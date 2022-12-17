@@ -131,6 +131,12 @@ $(document).ready(function(){
         actualizarCantidad(id, quantity, carrito);
     });
 
+    // enviar email newsletter
+    $(document).on("click", "#btn-newsletter", function() {
+        var email = $(this).siblings("#email-newsletter").val();
+        email.preventDefault();
+        enviarEmail(email);
+    });
 });
 // Funcion para cambiar las categorias
 var categoria;
@@ -230,4 +236,14 @@ function actualizarCantidad(id, quantity, carrito){
     }
     localStorage.setItem("carrito", JSON.stringify(carrito));
     vista.carrito(carrito);
+}
+
+// Funcion para enviar email
+function enviarEmail(email){
+    emailjs.send("service_ml4dica","template_t99dgtv")
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
 }

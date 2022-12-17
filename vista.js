@@ -39,9 +39,19 @@ export class Vista {
         <div id="newsletter">
             <p>¡Subscribete a nosotros para no perderte ninguna oferta!</p>
             <form action="">
-                <input type="email" placeholder="Escribe tu Email">
-                <input type="submit" value="Subscribirse">
+                <input id="#email-newsletter" type="email" placeholder="Escribe tu Email">
+                <input id="#btn-newsletter" type="submit" value="Subscribirse">
             </form>
+
+            
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+                (function (){
+                    emailjs.init("lreEYUVTeIuVaKI62");
+                })();
+            </script>
 
         </main>
         ${this.footer()}
@@ -301,7 +311,7 @@ export class Vista {
                         <input type="password" name="password" id="password">
                         <button id="btn-login">Login</button>
                     </form>
-                    <p>¿No tienes una cuenta? <a id="registrarse">Registrate Aqui</a></p>
+                    <p>¿No tienes una cuenta? <a id="registrarse"> Registrate Aqui</a></p>
                 </div>
             </section>
         </main>

@@ -82,6 +82,10 @@ header a i:hover{
     transition: 0.5s;
 }
 /* Estilos main pagina inicio ------------------------------- */
+main{
+    min-height: 100vh;
+    position: relative;
+}
 /* Estilos carrousel main ----------------------------------- */
 main #carrousel{
     display: flex;
@@ -333,7 +337,6 @@ main #presentacion{
     color: var(--secondary-color);
     box-shadow: var(--sombreado);
     cursor: pointer;
-    transition: 0.5s;
 }
 .lista-carrito{
     list-style: none;
@@ -367,6 +370,187 @@ main #presentacion{
     align-items: center;
     margin-top: 1.25rem;
     margin-bottom: 3rem;
+}
+.carrito-producto-text input[type="number"]{
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 3em;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+.carrito-producto-text button{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+.carrito-producto-text button:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.carrito-producto-eliminar button{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+.carrito-producto-eliminar button:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.carrito-producto-text button:active, .carrito-producto-eliminar button:active{
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    box-shadow: var(--sombreado);
+    cursor: pointer;
+}
+/* Estilos main login ---------------------------------------------- */
+.login-text{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+    font-size: 1.5em;
+}
+.login-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.25rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.login-form form input{
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    width: 20em;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+.login-form form input:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.login-form form input:active{
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    box-shadow: var(--sombreado);
+    cursor: pointer;
+}
+.login-form form button{
+    width: 20em;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+.login-form form button:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.login-form form button:active{
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    box-shadow: var(--sombreado);
+    cursor: pointer;
+}
+.login-form p{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.2em;
+}
+/* Estilos main registro ---------------------------------------------- */
+.registro-text{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+    font-size: 1.5em;
+}
+.registro-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.25rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}   
+.registro-form form input{
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    width: 20em;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+.registro-form form input:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.registro-form form input:active{
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    box-shadow: var(--sombreado);
+    cursor: pointer;
+}
+.registro-form form button{
+    width: 20em;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+.registro-form form button:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.registro-form form button:active{
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    box-shadow: var(--sombreado);
+    cursor: pointer;
+}
+.registro-form p{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.2em;
 }
 /* Estilos footer -------------------------------------------------- */
 footer{
