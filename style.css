@@ -634,7 +634,7 @@ footer{
     scale: 2;
 }
 /* Media query movil */
-@media only screen and (max-device-width : 600px) {
+@media only screen and (max-device-width : 767px) {
     /* Estilos del header --------------------------------------- */
     /* Estilos logo header --------------------------------------- */
     header img{
