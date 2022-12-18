@@ -484,6 +484,17 @@ main #presentacion{
     margin-bottom: 1.25rem;
     font-size: 1.2em;
 }
+.login-form p a{
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.login-form p a:hover{
+    color: var(--tertiary-color);
+    text-decoration: underline;
+    transition: 0.5s;
+}
 /* Estilos main registro ---------------------------------------------- */
 .registro-text{
     display: flex;
@@ -552,6 +563,17 @@ main #presentacion{
     margin-bottom: 1.25rem;
     font-size: 1.2em;
 }
+.registro-form p a{
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.registro-form p a:hover{
+    color: var(--tertiary-color);
+    text-decoration: underline;
+    transition: 0.5s;
+}
 /* Estilos footer -------------------------------------------------- */
 footer{
     background-color: rgb(29, 28, 28);
@@ -611,3 +633,278 @@ footer{
     gap: 2px;
     scale: 2;
 }
+/* Media query movil */
+@media only screen and (max-device-width : 600px) {
+    /* Estilos del header --------------------------------------- */
+    /* Estilos logo header --------------------------------------- */
+    header img{
+        width: 150%;
+    }
+    /* Estilos navegacion header --------------------------------- */
+    header nav{
+        margin-left: 0.25em;
+    }
+    header nav ul li a{
+        font-size: 0.25em;
+    }
+    /* Estilos iconos header --------------------------------- */
+    header a i{
+        scale: 0.5;
+        margin-top: 1em;
+        margin-left: -1em;
+    }
+    
+    /* Estilos main pagina inicio ------------------------------- */
+    /* Estilos carrousel main ----------------------------------- */
+    main #carrousel img{
+        width: 80%;
+    }
+    /* Estilos bienvenida ---------------------------------------- */
+    #bienvenida h1{
+        text-align: center;
+    }
+    /* Estilos relleno ------------------------------------------- */
+    
+    #relleno img{
+        width: 7.75rem;
+    }
+    /* Estilos presentacion ----------------------------------------- */
+    #presentacion img{
+        width: 9.5rem;
+    }
+    #presentacion #contenido-presentacion h1{
+        font-size: 1.5em;
+    }
+    #presentacion #contenido-presentacion p{
+        font-size: 0.8em;
+    }
+    /* Estilos main paginas productos ----------------------------------- */ 
+    .products-text{
+        font-size: 1em;
+    }
+    #contenido-productos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 0.5em;
+    }
+    /* Estilos main pagina de cada producto ----------------------------- */
+    .solo-producto{
+        font-family: 'Roboto Mono', monospace;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 1.25rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .solo-producto img{
+        width: 100%;
+    }
+    .solo-producto-text p{
+        font-size: 0.8em;
+    }
+    /* Estilos main Carrito -------------------------------------------- */
+    .carrito-text{
+        font-size: 1em;
+    }
+    .carrito-total{
+        font-size: 0.75em;
+    }
+    .carrito-total button{
+        width: 10em;
+    }
+    .carrito-producto-text{
+        font-size: 0.5em;
+    }
+    .carrito-producto-text input[type="number"]{
+        width: 10%;
+        font-size: 0.8em;
+    }
+    /* Estilos main login ---------------------------------------------- */
+    .login-text{
+        font-size: 1em;
+    }
+    .login-form form{
+        font-size: 0.5em;
+    }
+    .login-form form input{
+        font-size: 0.5em;
+        width: 30em;
+    }
+    .login-form form button{
+        width: 10em;
+    }
+    .login-form p{
+        font-size: 0.7em;
+    }
+    /* Estilos main registro ---------------------------------------------- */
+    .registro-text{
+        font-size: 1em;
+    }
+    .registro-form form{
+        font-size: 0.5em;
+    }   
+    .registro-form form input{
+        font-size: 0.5em;
+        width: 30em;
+    }
+    .registro-form form button{
+        width: 10em;
+    }
+    .registro-form p{
+        font-size: 0.7em;
+    }
+    /* Estilos footer -------------------------------------------------- */
+    footer{
+        height: 90rem;
+    }
+    #contenido-footer{
+        display: flex;
+        justify-content: center;
+    }
+    #contenido-footer ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        flex-wrap: wrap;
+    }
+}
+
+/* Media query tablet */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* Estilos del header --------------------------------------- */
+    /* Estilos logo header --------------------------------------- */
+    header img{
+        width: 120%;
+    }
+    /* Estilos navegacion header --------------------------------- */
+    header nav{
+        margin-left: 0.25em;
+    }
+    header nav ul li a{
+        font-size: 0.75em;
+    }
+    /* Estilos iconos header --------------------------------- */
+    header a i{
+        scale: 0.75;
+        margin-top: 1em;
+    }
+    
+    /* Estilos main pagina inicio ------------------------------- */
+    /* Estilos carrousel main ----------------------------------- */
+    main #carrousel img{
+        width: 80%;
+    }
+    /* Estilos bienvenida ---------------------------------------- */
+    #bienvenida h1{
+        text-align: center;
+    }
+    /* Estilos relleno ------------------------------------------- */
+    
+    #relleno img{
+        width: 12.75rem;
+    }
+    /* Estilos presentacion ----------------------------------------- */
+    #presentacion img{
+        width: 12.5rem;
+    }
+    #presentacion #contenido-presentacion h1{
+        font-size: 1.5em;
+    }
+    #presentacion #contenido-presentacion p{
+        font-size: 0.8em;
+    }
+    /* Estilos main paginas productos ----------------------------------- */ 
+    .products-text{
+        font-size: 1.25em;
+    }
+    #contenido-productos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 0.75em;
+    }
+    /* Estilos main pagina de cada producto ----------------------------- */
+    .solo-producto{
+        font-family: 'Roboto Mono', monospace;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 1.25rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .solo-producto img{
+        width: 80%;
+    }
+    .solo-producto-text p{
+        font-size: 0.8em;
+    }
+    /* Estilos main Carrito -------------------------------------------- */
+    .carrito-text{
+        font-size: 1em;
+    }
+    .carrito-total{
+        font-size: 0.75em;
+    }
+    .carrito-total button{
+        width: 10em;
+    }
+    .carrito-producto-text{
+        font-size: 0.75em;
+    }
+    .carrito-producto-text input[type="number"]{
+        width: 10%;
+        font-size: 0.8em;
+    }
+    /* Estilos main login ---------------------------------------------- */
+    .login-text{
+        font-size: 1.25em;
+    }
+    .login-form form{
+        font-size: 0.75em;
+    }
+    .login-form form input{
+        font-size: 0.75em;
+        width: 30em;
+    }
+    .login-form form button{
+        width: 21em;
+    }
+    .login-form p{
+        font-size: 0.9em;
+    }
+    /* Estilos main registro ---------------------------------------------- */
+    .registro-text{
+        font-size: 1.25em;
+    }
+    .registro-form form{
+        font-size: 0.75em;
+    }   
+    .registro-form form input{
+        font-size: 0.75em;
+        width: 30em;
+    }
+    .registro-form form button{
+        width: 21em;
+    }
+    .registro-form p{
+        font-size: 0.9em;
+    }
+    /* Estilos footer -------------------------------------------------- */
+    footer{
+        height: 50rem;
+    }
+    #contenido-footer{
+        display: flex;
+        justify-content: center;
+    }
+    #contenido-footer ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        flex-wrap: wrap;
+    }
+}
+
